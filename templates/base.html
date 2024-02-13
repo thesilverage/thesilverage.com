@@ -1,0 +1,71 @@
+{% import "macros.html" as m %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        {% if page.title %}
+            {% set title = page.title %}
+        {% elif section.title %}
+            {% set title = section.title %}
+        {% else %}
+            {% set title = "" %}
+        {% endif %}
+        <title>{% if title != config.title %} {{ title }} | {% endif %} {{ config.title }}</title>
+        <link rel="stylesheet" type="text/css" href="/style.css">
+        <link rel="alternate" type="application/rss+xml" title="RSS" href="{{ get_url(path="rss.xml", trailing_slash=false) }}">
+    </head>
+    <body>
+        <header>
+            <span><a href="/">The Silver Age</a></span>
+            <nav>
+                <ul>
+                    {% set basesect = get_section(path="_index.md") %}
+                    {% for sectpath in basesect.subsections %}
+                        {% set sect = get_section(path=sectpath) %}
+                        {% set numpages = sect.pages | length %}
+                        {% if numpages > 0 %}
+                            <li><a href="{{ sect.permalink }}">{{ sect.title }}</a></li>
+                        {% endif %}
+                    {% endfor %}
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h1>{% block heading %}{{ title }}{% endblock %}</h1>
+            {% block main %}
+            {% endblock %}
+        </main>
+        <aside>
+            <nav>
+            	<h2>Quick Links</h2>
+            	{% block sidebar %}
+            	{% endblock %}
+            	<h3>Sochial Medias</h3>
+            	<ul>
+                	<li>{{m::external(href="https://www.youtube.com/@thesilverage",text="Youtube")}}</li>
+                	<li><a href="{{ get_url(path="rss.xml", trailing_slash=false) }}">RSS Feed</a></li>
+            	</ul>
+            </nav>
+        </aside>
+        <aside>
+            <nav>
+            	<h2>We Approve</h2>
+            	<h3>Edification</h3>
+            	<ul>
+                	<li>{{m::external(href="https://libgen.li/",text="Library Genesis")}}</li>
+                	<li>{{m::external(href="https://www.youtube.com/@MemeAnalysis",text="Meme Analysis")}}</li>
+                	<li>{{m::external(href="https://www.youtube.com/@ImpliedMusic",text="Implied Music")}}</li>
+                	<li>{{m::external(href="https://www.youtube.com/@JimLill",text="Jim Lill")}}</li>
+            	</ul>
+            	<h3>Amusement</h3>
+            	<ul>
+                	<li>{{m::external(href="https://www.youtube.com/@JackStauber",text="Jack Stauber")}}</li>
+                	<li>{{m::external(href="https://www.youtube.com/@BenLevin",text="Ben Levin")}}</li>
+            	</ul>
+            </nav>
+        </aside>
+        <footer>
+            <p>Heehee Haha!</p>
+            <p>Copyright &copy; 2024 The Silver Age. All rights reserved.</p>
+        </footer>
+    </body>
+</html>

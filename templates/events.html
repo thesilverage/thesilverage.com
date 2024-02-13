@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+
+{% macro listevents(events,empty="No events.") %}
+    {% for event in events %}
+        <li>{{ event.date | date(format="%b %e") }}: <a href="{{ event.permalink }}">{{ event.title }}</a> at {{ event.extra.location }}, {{ event.extra.time }}</li>
+	{% else %}
+	    <li>{{ empty }}</li>
+	{% endfor %}
+{% endmacro listevent%}
+
+{% block main %}
+    {{ section.content | safe }}
+    {% set split = section.pages | length - 1 %}
+    {% for event in section.pages %}
+		{% set event_day = event.date | date(format="%Y%j") | int %}
+		{% set curr_day = now() | date(format="%Y%j") | int %}
+		{% if event_day < curr_day %}
+		    {% set_global split = loop.index0 %}
+		    {% break %}
+		{% endif %}
+	{% endfor %}
+	{% set futures = section.pages | slice(end=split) | reverse %}
+	{% set pasts = section.pages | slice(start=split) | group_by(attribute="year") %}
+    <h2>Upcoming</h2>
+    <ul>
+    {{ self::listevents(events=futures,empty="No upcoming events.") }}
+    </ul>
+    <h2>Past</h2>
+    {% for year, posts in pasts %}
+        <h3>{{ year }}</h3>
+        <ul>
+        {{ self::listevents(events=posts) }}
+        </ul>
+    {% else %}
+        No past events.
+    {% endfor %}
+{% endblock %}

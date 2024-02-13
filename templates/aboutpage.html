@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block main %}
+<img src="{{ page.extra.portraits.0 }}">
+<p>
+    <strong>Aliases</strong>: {{ page.extra.aliases | join(sep=", ") | safe }}
+</p>
+<img src="{{ page.extra.portraits.1 }}">
+<p>
+    {% for key, value in page.extra.facts %}
+    {% if key != "" %}<strong>{{ key }}</strong>: {% endif %}{{ value }}<br>
+    {% endfor %}
+</p>
+<article>
+    {{ page.content | safe }}
+</article>
+<img src="{{ page.extra.portraits.2 }}">
+<h2>Quotes</h2>
+{% for quote in page.extra.quotes %}
+<p>
+    <q>{{ quote | safe }}</q>
+</p>
+{% endfor %}
+<img src="{{ page.extra.portraits.3 }}">
+<h2>Social and Other Medias</h2>
+<p>
+    {% for key, value in page.extra.medias %}
+    <strong>{{ key }}</strong>: <a href="{{ value.url }}">{{ value.name }}</a>
+    {% endfor %}
+</p>
+{% endblock %}

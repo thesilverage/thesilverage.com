@@ -1,6 +1,11 @@
 # The URL the site will be built for
 base_url = "https://thesilverage.com"
 
+title = "The Silver Age"
+
+generate_feed = true
+feed_filename = "rss.xml"
+
 # Whether to automatically compile all Sass files in the sass directory
 compile_sass = false
 
