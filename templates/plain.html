@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block main %}
+<article>
+    <header>
+        {% block supertitle %}{% endblock %}
+        <h1>{{ this.title | safe }}</h1>
+        {% block subtitle %}{% endblock %}
+    </header>
+    {% block precontent %}{% endblock %}
+    {{ this.content | safe }}
+    {% block postcontent %}{% endblock %}
+</article>
+{% endblock %}

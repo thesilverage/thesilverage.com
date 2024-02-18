@@ -1,7 +1,10 @@
-{% extends "base.html" %}
+{% extends "plain.html" %}
 
-{% block main %}
-<article>
-    {{ page.content | safe }}
-</article>
+{% block supertitle %}
+{% if this.extra.supertitle %}{{ this.extra.supertitle | safe }}{% endif %}
+{% endblock %}
+
+{% block subtitle %}
+{% if this.extra.subtitle %}{{ this.extra.subtitle | safe }}{% endif %}
+{{ m::pagemeta(post=this) }}
 {% endblock %}

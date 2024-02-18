@@ -1,36 +1,35 @@
 {% import "macros.html" as m %}
+{% if page %}{% set this = page %}{% elif section %}{% set this = section %}{% endif %}
+{% set root_section = get_section(path="_index.md") %}
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        {% if page.title %}
-            {% set title = page.title %}
-        {% elif section.title %}
-            {% set title = section.title %}
-        {% else %}
-            {% set title = "" %}
-        {% endif %}
-        <title>{% if title != config.title %} {{ title }} | {% endif %} {{ config.title }}</title>
+        <title>{% if this.title != config.title %}{{ this.title }} | {% endif %}{{ config.title }}</title>
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#0000cc">
+        <meta name="msapplication-TileColor" content="#0000cc">
+        <meta name="theme-color" content="#0000cc">
         <link rel="stylesheet" type="text/css" href="/style.css">
         <link rel="alternate" type="application/rss+xml" title="RSS" href="{{ get_url(path="rss.xml", trailing_slash=false) }}">
     </head>
     <body>
         <header>
-            <span><a href="/">The Silver Age</a></span>
+            <span><a href="/"><img src="/silver-age-logo.svg">The Silver Age</a></span>
             <nav>
                 <ul>
-                    {% set basesect = get_section(path="_index.md") %}
-                    {% for sectpath in basesect.subsections %}
+                    {% for sectpath in root_section.subsections %}
                         {% set sect = get_section(path=sectpath) %}
-                        {% set numpages = sect.pages | length %}
-                        {% if numpages > 0 %}
-                            <li><a href="{{ sect.permalink }}">{{ sect.title }}</a></li>
+                        {% if sect.pages %}
+                            <li><a href="{{ sect.permalink | safe }}">{{ sect.title }}</a></li>
                         {% endif %}
                     {% endfor %}
                 </ul>
             </nav>
         </header>
         <main>
-            <h1>{% block heading %}{{ title }}{% endblock %}</h1>
             {% block main %}
             {% endblock %}
         </main>
@@ -39,9 +38,10 @@
             	<h2>Quick Links</h2>
             	{% block sidebar %}
             	{% endblock %}
-            	<h3>Sochial Medias</h3>
+            	<h3>Social Medias</h3>
             	<ul>
                 	<li>{{m::external(href="https://www.youtube.com/@thesilverage",text="Youtube")}}</li>
+                	<li>{{m::external(href="https://www.instagram.com/the.silver.age/",text="Instagram")}}</li>
                 	<li><a href="{{ get_url(path="rss.xml", trailing_slash=false) }}">RSS Feed</a></li>
             	</ul>
             </nav>

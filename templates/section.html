@@ -1,33 +1,52 @@
 {% extends "base.html" %}
 
 {% block main %}
-    {{ section.content | safe }}
+    <header>
+        <h1>{% block heading %}{{ this.title | safe }}{% endblock %}</h1>
+        {% set breadcrumbs = m::breadcrumbs(ancestors=this.ancestors) %}
+        {% if breadcrumbs %}
+        <span>in {{ breadcrumbs | safe }}</span>
+        {% endif %}
+    </header>
+    {{ this.content | safe }}
     {% for post in paginator.pages %}
-        <article>
-            <header>
-                {% set parent_path = post.components | slice(end=-1) | concat(with="_index.md") | join(sep="/") %}
-                {% set parent = get_section(path=parent_path) %}
-                <h2><a href="{{post.permalink}}">{{ post.title }}</a></h2>
-                {{ post.date }} in {{ parent.title }}
-            </header>
-            {% if post.summary %}
-                {{ post.summary | markdown(inline=true) | safe }}
-            {% elif post.description %}
-                {{ post.description | safe }}
-            {% elif post.content %}
-                {{ post.content | striptags | truncate(length=150) | safe }}
-            {% endif %}
-        </article>
+    <article>
+        <header>
+            <h2><a href="{{ post.permalink | safe }}">{{ post.title | safe}}</a></h2>
+            {{ m::pagemeta(post=post,from=this) }}
+        </header>
+        {% if post.summary %}
+            {{ post.summary | markdown() | safe }}
+        {% elif post.description %}
+            {{ post.description | safe }}
+        {% elif post.content %}
+            {{ post.content | striptags | truncate(length=150) | safe }}
+        {% endif %}
+    </article>
     {% endfor %}
+    {% if paginator.previous or paginator.next %}
     <nav>
         {% if paginator.previous %}
-            <a href="{{ paginator.first }}">&lt;&lt;</a> <a href="{{ paginator.previous }}">&lt;</a>
+        <a href="{{ paginator.first | safe }}">&lt;&lt;</a> <a href="{{ paginator.previous | safe }}">&lt;</a>
         {% endif %}
-        {% if paginator.previous or paginator.next %}
-            {{ paginator.current_index }}/{{ paginator.number_pagers }}
-        {% endif %}
+        {{ paginator.current_index }}/{{ paginator.number_pagers }}
         {% if paginator.next%}
-            <a href="{{ paginator.next }}">&gt;</a> <a href="{{ paginator.last }}">&gt;&gt;</a>
+        <a href="{{ paginator.next | safe }}">&gt;</a> <a href="{{ paginator.last | safe }}">&gt;&gt;</a>
         {% endif %}
     </nav>
+    {% endif %}
+{% endblock %}
+
+{% block sidebar %}
+{% if this.subsections %}
+<h3>Categories</h3>
+<ul>
+    {% for subpath in this.subsections %}
+    {% set sub = get_section(path=subpath) %}
+    {% if sub.pages %}
+    <li><a href="{{ sub.permalink | safe }}">{{ sub.title | safe }}</a></li>
+    {% endif %}
+    {% endfor %}
+</ul>
+{% endif %}
 {% endblock %}

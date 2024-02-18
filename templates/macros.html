@@ -1,3 +1,29 @@
 {% macro external(href, text) %}
-    <a href="{{ href }}" target="_blank" rel="noreferrer noopener">{{ text }}</a>
+    <a href="{{ href | safe }}" target="_blank" rel="noreferrer noopener">{{ text }}</a>
 {% endmacro external %}
+
+{% macro img(src,height="") %}
+    <a href="{{ src | safe }}"><img src="{{ src | safe }}"{% if height %} style="max-height:{{ height | safe }};"{% endif %}></a>
+{% endmacro img %}
+
+{% macro pagemeta(post,from=false) %}
+    <span>
+        {{ post.date }}
+        {% set parent_path = post.components | slice(end=-1) | concat(with="_index.md") | join(sep="/") %}
+        {% set parent = get_section(path=parent_path) %}
+        {% set ancestors = parent.ancestors | concat(with=parent_path) %}
+        {% set breadcrumbs = self::breadcrumbs(ancestors=ancestors,from=from) %}
+        {% if breadcrumbs %}in {{ breadcrumbs | safe }}{% endif %}
+    </span>
+{% endmacro pageheader %}
+
+{% macro breadcrumbs(ancestors,from=false) %}
+    {%- if not from -%}{%- set from = get_section(path="_index.md") -%}{%- endif -%}
+    {%- for ancestorpath in ancestors | slice(start=0) -%}
+    {%- set ancestor = get_section(path=ancestorpath) -%}
+    {%- if not ancestor.path in from.path -%}
+    <a href="{{ ancestor.permalink | safe }}">{{ ancestor.title | safe }}</a>{% if not loop.last %}/{% endif %}
+    {%- endif -%}
+    {%- endfor -%}
+{% endmacro breadcrumbs %}
+

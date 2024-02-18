@@ -1,15 +1,14 @@
-{% extends "base.html" %}
+{% extends "plain.html" %}
 
 {% macro listevents(events,empty="No events.") %}
     {% for event in events %}
-        <li>{{ event.date | date(format="%b %e") }}: <a href="{{ event.permalink }}">{{ event.title }}</a> at {{ event.extra.location }}, {{ event.extra.time }}</li>
+        <li>{{ event.date | date(format="%b %e") }}: <a href="{{ event.permalink | safe }}">{{ event.title | safe }}</a> at {{ event.extra.location }}, {{ event.extra.time }}</li>
 	{% else %}
 	    <li>{{ empty }}</li>
 	{% endfor %}
-{% endmacro listevent%}
+{% endmacro listevent %}
 
-{% block main %}
-    {{ section.content | safe }}
+{% block postcontent %}
     {% set split = section.pages | length - 1 %}
     {% for event in section.pages %}
 		{% set event_day = event.date | date(format="%Y%j") | int %}
@@ -27,11 +26,20 @@
     </ul>
     <h2>Past</h2>
     {% for year, posts in pasts %}
-        <h3>{{ year }}</h3>
+        <h3 id="{{ year }}">{{ year }}</h3>
         <ul>
         {{ self::listevents(events=posts) }}
         </ul>
     {% else %}
         No past events.
     {% endfor %}
+{% endblock %}
+
+{% block sidebar %}
+    <h3>Scroll to:</h3>
+    <ul>
+        {% for year, posts in pasts %}
+        <li><a href="{{ section.permalink | safe }}#{{ year }}">{{ year }}</a></li>
+        {% endfor %}
+    </ul>
 {% endblock %}

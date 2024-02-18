@@ -1,0 +1,18 @@
+{% extends "plain.html" %}
+
+{% block subtitle %}
+<strong>Date</strong>: {{ page.date | date(format="%b %e, %Y") }} &middot;
+<strong>Time</strong>: {{ page.extra.time }} &middot;
+<strong>Location</strong>: {{ page.extra.location }}
+{% endblock %}
+
+{% block sidebar %}
+{% if page.lower %}
+<h3>Next</h3>
+<a href="{{ page.lower.permalink | safe }}">{{ page.lower.title | safe }}</a>
+{% endif %}
+{% if page.higher %}
+<h3>Previous</h3>
+<a href="{{ page.higher.permalink | safe }}">{{ page.higher.title | safe }}</a>
+{% endif %}
+{% endblock %}

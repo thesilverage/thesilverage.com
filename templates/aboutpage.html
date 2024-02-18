@@ -1,31 +1,49 @@
-{% extends "base.html" %}
+{% extends "plain.html" %}
 
-{% block main %}
-<img src="{{ page.extra.portraits.0 }}">
-<p>
-    <strong>Aliases</strong>: {{ page.extra.aliases | join(sep=", ") | safe }}
-</p>
-<img src="{{ page.extra.portraits.1 }}">
+{% block subtitle %}
+<strong>Aliases</strong>: {{ page.extra.aliases | join(sep=", ") | safe }}
+{% endblock %}
+
+{% block precontent %}
+{{ m::img(src=page.extra.portraits.0) }}
 <p>
     {% for key, value in page.extra.facts %}
-    {% if key != "" %}<strong>{{ key }}</strong>: {% endif %}{{ value }}<br>
+    {% if key != "" %}<strong>{{ key | safe }}</strong>: {% endif %}{{ value | safe }}<br>
     {% endfor %}
 </p>
-<article>
-    {{ page.content | safe }}
-</article>
-<img src="{{ page.extra.portraits.2 }}">
+{{ m::img(src=page.extra.portraits.1) }}
+{% endblock %}
+
+{% block postcontent %}
+{{ m::img(src=page.extra.portraits.2) }}
 <h2>Quotes</h2>
 {% for quote in page.extra.quotes %}
 <p>
     <q>{{ quote | safe }}</q>
 </p>
 {% endfor %}
-<img src="{{ page.extra.portraits.3 }}">
+{{ m::img(src=page.extra.portraits.3) }}
 <h2>Social and Other Medias</h2>
 <p>
     {% for key, value in page.extra.medias %}
-    <strong>{{ key }}</strong>: <a href="{{ value.url }}">{{ value.name }}</a>
+    <strong>{{ key }}</strong>: <a href="{{ value.url | safe }}">{{ value.name }}</a>
     {% endfor %}
 </p>
+{% endblock %}
+
+{% block sidebar %}
+    <h3>Members</h3>
+    <ul>
+        {% set sectpath = page.ancestors | last %}
+        {% set section = get_section(path=sectpath) %}
+        {% for member in section.pages %}
+        <li>
+            {% if member == page %}
+            <strong>{{ member.title }}</strong>
+            {% else %}
+            <a href="{{ member.permalink | safe }}">{{ member.title }}</a>
+            {% endif %}
+        </li>
+        {% endfor %}
+    </ul>
 {% endblock %}

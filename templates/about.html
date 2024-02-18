@@ -1,11 +1,10 @@
-{% extends "base.html" %}
+{% extends "plain.html" %}
 
-{% block main %}
-    {{ section.content | safe }}
-    <h2>Members</h2>
+{% block sidebar %}
+    <h3>Members</h3>
     <ul>
     {% for member in section.pages %}
-        <li><a href="{{ member.permalink }}">{{ member.title }}</a></li>
+        <li><a href="{{ member.permalink | safe }}">{{ member.title }}</a></li>
     {% endfor %}
     </ul>
 {% endblock %}
