@@ -139,13 +139,18 @@ body > aside {
 }
 
 body > aside h2 {
-    margin: 0;
+    margin: 0 0 0.5em 0;
     text-align: center;
     font-size: 1.4em;
 }
 
 body > aside h3 {
     margin-top: 0.75em;
+    margin-bottom: 0.25em;
+}
+
+body > aside h4 {
+    margin-top: 0.25em;
     margin-bottom: 0.25em;
 }
 
@@ -271,11 +276,14 @@ embed {
     height: 35em;
 }
 
-body > footer {
+footer {
     text-align: center;
+    font-size: 0.75em;
+}
+
+body > footer {
     grid-area: footer;
     width: 100%;
-    font-size: 0.75em;
     color: #555;
 }
 

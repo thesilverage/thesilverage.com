@@ -1,5 +1,5 @@
 +++
-title = "Picnic With Andy"
+title = "Picnic with Andy"
 date = 2023-11-23
 +++
 

@@ -8,3 +8,13 @@
 {% if this.extra.subtitle %}{{ this.extra.subtitle | safe }}{% endif %}
 {{ m::pagemeta(post=this) }}
 {% endblock %}
+
+{% block sidebar %}
+{% if this.extra.sidebarlinks %}
+<ul>
+{% for name, link in this.extra.sidebarlinks %}
+<li><a href="{{ link | safe }}">{{ name }}</a></li>
+{% endfor %}
+</ul>
+{% endif %}
+{% endblock %}
