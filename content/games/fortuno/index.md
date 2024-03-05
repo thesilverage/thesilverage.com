@@ -19,7 +19,7 @@ The space next to the draw pile is reserved for the discard pile.
 Players view their own cards and aim to be the first to empty their hand.
 The game begins with the player to the dealer's left performing a flip (see below).
 Players then take turns going clockwise.
-A player wins once they have no cards after the completion of any turn.
+A player wins once they have no cards upon the completion of any turn.
 
 ### Playing
 
@@ -29,7 +29,7 @@ If the draw pile is empty, shuffle all but the top card of the discard pile to r
 
 When playing their penultimate card, the player must call out <q>Fortuno!</q>
  - If a player is caught breaking this rule, the accuser gives them a card from their hand.
- - If a player is falsely accused, they give the accuser a card from their hand.
+ - If a player is falsely accused, they may give the accuser a card from their hand.
  - Players must respond truthfully when asked how many cards are in their hand.
 
 ### Flipping
@@ -78,10 +78,11 @@ Singing a song while doing so is encouraged.</li>
 The two then play as a team, taking turns collaboratively and sharing access to each other's (separate) hands.
 Once the original player's next turn is completed or skipped, the lover divides their hands evenly (Divorce), choosing which cards they get to keep (<q>She took the kids</q>).
 <ul><li>If the player and lover cannot agree on what to play, they must settle their dispute with a single match of rock-paper-scissors.</li>
-<li>If either the player or the lover are hermitted, they immediately divorce.</li></ul></li>
+<li>If either the player or the lover is hermitted, they immediately divorce.</li>
+<li>If either is eliminated, the other keeps both of their hands (Widowed).</li></ul></li>
 <li><strong>The Chariot</strong>: the card immediately beneath this card is treated as the top of the discard pile (Transparency).
 Can be discarded out of turn for immunity in response to a card affecting the entire group (e.g. Adjustment).</li>
-<li><strong>Adjustment</strong>: shuffle all hands together, then deal them back to the players (Communism).
+<li><strong>Adjustment</strong>: shuffle all hands together and deal them back to the players (Communism).
 <ul><li>Cards are dealt in the direction of play, starting with the player after the Adjustor.</li>
 <li>After the third adjustment of the game, remove this card from the deck.</li></ul></li>
 <li><strong>The Hermit</strong>: the next player is skipped for two turns (Hermitted).
@@ -120,11 +121,9 @@ If the drawn card fits their request, they may play it.
 
 ## Lesbian Endgame
 
-If only two players remain, remove the following cards from the deck as they are played, flipped, or drawn, without allowing them to perform any function:
+If only two players remain, remove the following cards from the deck as they are played (still treated as the top of the discard pile), flipped (flip again), or drawn (draw again), without allowing them to perform any function:
  - All Aces, Princes and Knights;
  - The Fool, The Magus, The Emperor, The Empress, The Hierophant, The Lovers, The Hermit, The Hanged Man, The Devil, and The Tower.
-
-Played or flipped cards are still treated as the top of the discard pile for the next player.
 
 {% footer() %}
 Created by:<br>
