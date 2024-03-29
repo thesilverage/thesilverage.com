@@ -1,6 +1,6 @@
 +++
 title = "Humans vs. Zombies Semi-Formal"
-date = "2024-04-27"
+date = "2024-03-30"
 template = "eventpage.html"
 [extra]
 location = "Weightman Hall"
