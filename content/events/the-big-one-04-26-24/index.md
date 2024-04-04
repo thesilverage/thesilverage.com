@@ -1,6 +1,6 @@
 +++
 title = "The Big One"
-date = "2024-04-26"
+date = "2024-05-03"
 template = "eventpage.html"
 [extra]
 location = "HQ"
