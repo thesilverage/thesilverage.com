@@ -45,7 +45,7 @@ The flipped card affects the flipper as follows:
 
 **Princesses**: the next player draws two and loses their turn.<br>
 **Princes**: the next player draws three and loses their turn (Patriarchy).<br>
-**Queens**: skip the next player's turn ("Begone, peasant").<br>
+**Queens**: skip the next player's turn (<q>Begone, peasant</q>).<br>
 **Knights**: reverse direction of play (Joust).<br>
 **Aces**: can be played on any suit.
 
