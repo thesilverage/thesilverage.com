@@ -1,5 +1,5 @@
 +++
-title = "Coombayah: Together We Sing"
+title = "Koombayah: Together We Sing"
 date = "2024-05-31"
 template = "eventpage.html"
 [extra]
