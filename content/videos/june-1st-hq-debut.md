@@ -3,7 +3,7 @@ title = "June 1st: HQ Debut"
 date = 2024-06-05
 +++
 
-{{ youtube(id="aUeqSuPBuPQ") }}
+{{ youtube(id="__I7LcXsLcA") }}
 
 <!-- more -->
 
