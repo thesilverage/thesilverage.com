@@ -15,20 +15,20 @@
 {% endblock %}
 
 {% block postcontent %}
-{{ m::img(src=page.extra.portraits.2) }}
 <h2>Quotes</h2>
 {% for quote in page.extra.quotes %}
 <p>
     <q>{{ quote | safe }}</q>
 </p>
 {% endfor %}
-{{ m::img(src=page.extra.portraits.3) }}
+{{ m::img(src=page.extra.portraits.2) }}
 <h2>Social and Other Medias</h2>
 <p>
     {% for key, value in page.extra.medias %}
-    <strong>{{ key }}</strong>: <a href="{{ value.url | safe }}">{{ value.name }}</a>
+    <strong>{{ key }}</strong>: <a href="{{ value.url | safe }}">{{ value.name }}</a><br>
     {% endfor %}
 </p>
+{{ m::img(src=page.extra.portraits.3) }}
 {% endblock %}
 
 {% block sidebar %}

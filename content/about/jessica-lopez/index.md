@@ -12,4 +12,5 @@ quotes = ["If someone steals your thunder, bring out your lightning.", "They can
 "Allergies" = "Soy, Nuts, Pollen, Cats, Swiss Cheese (not really but she doesn't like the holes)"
 "Favorite Words" = "Idiosyncratic, Flabbergasted, Funafuti, Kamehameha, Obsidian, Semantic"
 [extra.medias]
+"Twitch" = {name = "bestgrell", url = "https://www.twitch.tv/bestgrell"}
 +++
