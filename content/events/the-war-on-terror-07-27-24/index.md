@@ -7,3 +7,4 @@ location = "HQ"
 time = "19:30"
 +++
 
+{{ bigimg(src="jul-27-invitation.png") }}
