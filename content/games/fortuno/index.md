@@ -4,7 +4,7 @@ date = 2024-02-18
 description = "An elaborate shedding game played with tarot cards."
 [extra]
 supertitle = "Silver Age Games presents:"
-[extra.sidebarlinks]
+[extra.sidebar.ungrouped]
 "PDF Version" = "fortuno.pdf"
 +++
 

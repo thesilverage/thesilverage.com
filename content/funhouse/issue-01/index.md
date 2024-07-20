@@ -2,7 +2,7 @@
 title = "Fun House Vol. 1"
 date = 2024-06-01
 description = "First issue of our new periodical. Bands: Signal Valley, Away Game, The Silver Age"
-[extra.sidebarlinks]
+[extra.sidebar.ungrouped]
 "PDF Version" = "fun-house-01.pdf"
 +++
 

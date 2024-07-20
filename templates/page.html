@@ -10,11 +10,16 @@
 {% endblock %}
 
 {% block sidebar %}
-{% if this.extra.sidebarlinks %}
+{% if this.extra.sidebar %}
+{% for groupname, group in this.extra.sidebar %}
+{% if groupname != "ungrouped" %}
+<h3>{{ groupname }}</h3>
+{% endif %}
 <ul>
-{% for name, link in this.extra.sidebarlinks %}
+{% for name, link in group %}
 <li><a href="{{ link | safe }}">{{ name }}</a></li>
 {% endfor %}
 </ul>
+{% endfor %}
 {% endif %}
 {% endblock %}
