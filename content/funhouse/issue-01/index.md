@@ -4,6 +4,8 @@ date = 2024-06-01
 description = "First issue of our new periodical. Bands: Signal Valley, Away Game, The Silver Age"
 [extra.sidebar.ungrouped]
 "PDF Version" = "fun-house-01.pdf"
+[extra.sidebar."Full Interviews"]
+"Signal Valley" = "signal-valley-interview-22-05-24.pdf"
 +++
 
 
