@@ -3,7 +3,7 @@
 :root {
     --nav-height: 2em;
     --aside-margin: 1rem;
-    --aside-width: 24ch;
+    --aside-width: 22ch;
     --aside-top: calc(var(--nav-height) + var(--aside-margin));
     --aside-total-width: calc((var(--aside-margin) * 2) + var(--aside-width));
     --main-min-width: 50ch;
@@ -11,7 +11,7 @@
 
     box-sizing: border-box;
     font-family: "Computer Modern Serif", serif;
-    font-size: 1.15rem;
+    font-size: calc(15px + 0.3vw);
     line-height: 1.25;
     background-color: #050505;
     color: #eee;
@@ -236,6 +236,7 @@ main header:has(h2) > span {
 main header span {
     display: block;
     color: #777;
+    text-wrap: nowrap;
 }
 
 main header h2 {
@@ -324,7 +325,7 @@ body > footer {
     color: #555;
 }
 
-@media (max-width: 950px) {
+@media (max-width: 1000px) {
     body {
         grid-template-columns: 1fr 1fr;
         grid-template-areas:
@@ -342,13 +343,13 @@ body > footer {
     }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 920px) {
     body > header > span {
         font-size: 5em;
     }
 }
 
-@media (max-width: 675px) {
+@media (max-width: 750px) {
     body > header > span {
         font-size: 4em;
     }
