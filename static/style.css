@@ -11,7 +11,7 @@
 
     box-sizing: border-box;
     font-family: "Computer Modern Serif", serif;
-    font-size: calc(15px + 0.3vw);
+    font-size: 1.15rem;
     line-height: 1.25;
     background-color: #050505;
     color: #eee;
@@ -117,7 +117,7 @@ body > header article {
 body > header nav {
     background-color: #111;
     font-variant: small-caps;
-    text-wrap: nowrap;
+    white-space: nowrap;
     grid-area: nav;
     height: var(--nav-height);
     width: calc(100% + (2 * var(--aside-margin)));
@@ -152,9 +152,9 @@ body > header nav li:hover {
 }
 
 body > header nav a {
-    width: 100%;
+    width: auto;
     height: 100%;
-    padding: 0.15em 1.5ch 0 1.5ch;
+    padding: 0.15em 1ch 0 1ch;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -236,7 +236,7 @@ main header:has(h2) > span {
 main header span {
     display: block;
     color: #777;
-    text-wrap: nowrap;
+    white-space: nowrap;
 }
 
 main header h2 {
@@ -321,7 +321,7 @@ footer {
 
 body > footer {
     grid-area: footer;
-    width: 100%;
+    width: auto;
     color: #555;
 }
 
@@ -343,15 +343,21 @@ body > footer {
     }
 }
 
-@media (max-width: 920px) {
+@media (max-width: 800px) {
     body > header > span {
         font-size: 5em;
     }
 }
 
-@media (max-width: 750px) {
+@media (max-width: 675px) {
     body > header > span {
         font-size: 4em;
+    }
+}
+
+@media (max-width: 610px) {
+    body > aside nav {
+        column-count: 1;
     }
 }
 
