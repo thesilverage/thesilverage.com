@@ -1,10 +1,10 @@
 {% extends "plain.html" %}
 
-{% block sidebar %}
-    <h3>Members</h3>
-    <ul>
-    {% for member in section.pages %}
-        <li><a href="{{ member.permalink | safe }}">{{ member.title }}</a></li>
-    {% endfor %}
-    </ul>
+{% block postcontent %}
+    <h2>Our Members</h2>
+	<ul>
+	{% for member in section.pages | sort(attribute="title") %}
+	    <li><a href="{{ member.permalink | safe }}">{{ member.title }}</a></li>
+	{% endfor %}
+	</ul>
 {% endblock %}

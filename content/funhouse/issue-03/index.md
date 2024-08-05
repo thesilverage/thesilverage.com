@@ -4,13 +4,7 @@ date = 2024-07-27
 description = "Bands: Pleasure Circuit, Hackers &lley, The Goons; Venue Feature: MoMA2"
 [extra.sidebar.ungrouped]
 "PDF Version" = "fun-house-03.pdf"
-[extra.sidebar."Full Interviews"]
-"Pleasure Circuit" = "pleasure-circuit-interview-09-07-24.pdf"
-"Hackers &lley" = "hackers-&lley-interview-05-07-24.pdf"
-"The Goons" = "the-goons-interview-16-07-24.pdf"
-"MoMA2" = "moma2-interview-14-07-24.pdf"
 +++
-
 
 {{ bigimg(src="fun-house-03-01.png") }}
 {{ bigimg(src="fun-house-03-02.png") }}
@@ -28,3 +22,9 @@ description = "Bands: Pleasure Circuit, Hackers &lley, The Goons; Venue Feature:
 {{ bigimg(src="fun-house-03-14.png") }}
 {{ bigimg(src="fun-house-03-15.png") }}
 {{ bigimg(src="fun-house-03-16.png") }}
+
+## Full Interviews
+[Pleasure Circuit](pleasure-circuit-interview-09-07-24.pdf)<br>
+[Hackers &lley](hackers-&lley-interview-05-07-24.pdf)<br>
+[The Goons](the-goons-interview-16-07-24.pdf)<br>
+[MoMA2](moma2-interview-14-07-24.pdf)

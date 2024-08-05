@@ -2,5 +2,5 @@
 title = "Music"
 transparent = true
 paginate_by = 8
-weight = 10
+weight = 60
 +++

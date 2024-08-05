@@ -6,13 +6,16 @@
 <strong>Location</strong>: {{ page.extra.location }}
 {% endblock %}
 
-{% block sidebar %}
-{% if page.lower %}
-<h3>Next</h3>
-<a href="{{ page.lower.permalink | safe }}">{{ page.lower.title | safe }}</a>
-{% endif %}
-{% if page.higher %}
-<h3>Previous</h3>
-<a href="{{ page.higher.permalink | safe }}">{{ page.higher.title | safe }}</a>
-{% endif %}
+{% block bottomnav %}
+<nav>
+	{% if page.lower %}
+	Next: <a href="{{ page.lower.permalink | safe }}">{{ page.lower.title | safe }}</a>
+	{% endif %}
+	{% if page.lower and page.higher %}
+	&middot
+	{% endif %}
+	{% if page.higher %}
+	Previous: <a href="{{ page.higher.permalink | safe }}">{{ page.higher.title | safe }}</a>
+	{% endif %}
+</nav>
 {% endblock %}

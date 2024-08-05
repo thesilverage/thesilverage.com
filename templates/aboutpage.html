@@ -36,7 +36,7 @@
     <ul>
         {% set sectpath = page.ancestors | last %}
         {% set section = get_section(path=sectpath) %}
-        {% for member in section.pages %}
+        {% for member in section.pages | sort(attribute="title") %}
         <li>
             {% if member == page %}
             <strong>{{ member.title }}</strong>

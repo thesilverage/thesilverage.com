@@ -17,13 +17,33 @@
     </head>
     <body>
         <header>
-            <span><a href="/"><img src="/silver-age-logo.svg">The Silver Age</a></span>
+            <span><a href="/"><img src="/silver-age-logo.png">The Silver Age</a></span>
+            <article>
+                {% set events = get_section(path="events/_index.md") %}
+                {% for event in events.pages | sort(attribute="date") %}
+                	{% set event_day = event.date | date(format="%Y%j") | int %}
+                	{% set curr_day = now() | date(format="%Y%j") | int %}
+                	{% if event_day > curr_day %}
+                	    Next event: <a href="{{ event.permalink | safe }}">{{ event.title | safe }}</a>, {{ event.date | date(format="%B %e") }}
+                	    {% break %}
+                	{% endif %}
+                {% endfor %}
+            </article>
             <nav>
                 <ul>
+                    {% set topsection = false %}
+                    {% if this.components %}
+                    	{% set toppath = this.components | slice(end=1) | concat(with="_index.md") | join(sep="/") %}
+                        {% set topsection = get_section(path=toppath) %}
+                    {% endif %}
                     {% for sectpath in root_section.subsections %}
                         {% set sect = get_section(path=sectpath) %}
                         {% if sect.pages %}
-                            <li><a href="{{ sect.permalink | safe }}">{{ sect.title }}</a></li>
+                        	{% if topsection == sect %}
+                            	<li><a href="{{ sect.permalink | safe }}"><strong>{{ sect.title }}</strong></a></li>
+                            {% else %}
+                            	<li><a href="{{ sect.permalink | safe }}">{{ sect.title }}</a></li>
+                            {% endif %}
                         {% endif %}
                     {% endfor %}
                 </ul>
@@ -34,8 +54,8 @@
             {% endblock %}
         </main>
         <aside>
+        	<h2>Quick Links</h2>
             <nav>
-            	<h2>Quick Links</h2>
             	{% block sidebar %}
             	{% endblock %}
             	<h3>Social Medias</h3>
@@ -52,8 +72,8 @@
             </nav>
         </aside>
         <aside>
+        	<h2>We Approve</h2>
             <nav>
-            	<h2>We Approve</h2>
             	<h3>Edification</h3>
             	<ul>
                 	<li>{{m::external(href="https://libgen.li/",text="Library Genesis")}}</li>

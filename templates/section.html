@@ -3,10 +3,25 @@
 {% block main %}
     <header>
         <h1>{% block heading %}{{ this.title | safe }}{% endblock %}</h1>
-        {% set breadcrumbs = m::breadcrumbs(ancestors=this.ancestors) %}
-        {% if breadcrumbs %}
-        <span>in {{ breadcrumbs | safe }}</span>
-        {% endif %}
+        {% block subheading %}
+        <nav>
+            {% set breadcrumbs = m::breadcrumbs(ancestors=this.ancestors) %}
+            {% if breadcrumbs %}
+            <span>in {{ breadcrumbs | safe }}</span>
+            {% endif %}
+            {% if this.subsections %}
+            Categories:
+            <ul>
+                {% for subpath in this.subsections %}
+                {% set sub = get_section(path=subpath) %}
+                {% if sub.pages %}
+                <li><a href="{{ sub.permalink | safe }}">{{ sub.title | safe }}</a></li>
+                {% endif %}
+                {% endfor %}
+            </ul>
+            {% endif %}
+        </nav>
+        {% endblock %}
     </header>
     {{ this.content | safe }}
     {% for post in paginator.pages %}
@@ -30,23 +45,9 @@
         <a href="{{ paginator.first | safe }}">&lt;&lt;</a> <a href="{{ paginator.previous | safe }}">&lt;</a>
         {% endif %}
         {{ paginator.current_index }}/{{ paginator.number_pagers }}
-        {% if paginator.next%}
+        {% if paginator.next %}
         <a href="{{ paginator.next | safe }}">&gt;</a> <a href="{{ paginator.last | safe }}">&gt;&gt;</a>
         {% endif %}
     </nav>
     {% endif %}
-{% endblock %}
-
-{% block sidebar %}
-{% if this.subsections %}
-<h3>Categories</h3>
-<ul>
-    {% for subpath in this.subsections %}
-    {% set sub = get_section(path=subpath) %}
-    {% if sub.pages %}
-    <li><a href="{{ sub.permalink | safe }}">{{ sub.title | safe }}</a></li>
-    {% endif %}
-    {% endfor %}
-</ul>
-{% endif %}
 {% endblock %}

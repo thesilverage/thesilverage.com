@@ -3,5 +3,5 @@ title = "Videos"
 transparent = true
 sort_by = "date"
 paginate_by = 8
-weight = 20
+weight = 30
 +++

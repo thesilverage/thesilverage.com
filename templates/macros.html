@@ -15,7 +15,7 @@
         {% set breadcrumbs = self::breadcrumbs(ancestors=ancestors,from=from) %}
         {% if breadcrumbs %}in {{ breadcrumbs | safe }}{% endif %}
     </span>
-{% endmacro pageheader %}
+{% endmacro pagemeta %}
 
 {% macro breadcrumbs(ancestors,from=false) %}
     {%- if not from -%}{%- set from = get_section(path="_index.md") -%}{%- endif -%}
@@ -27,3 +27,6 @@
     {%- endfor -%}
 {% endmacro breadcrumbs %}
 
+{% macro eventmeta(event) %}
+    {{ event.date | date(format="%b %e") }}: <a href="{{ event.permalink | safe }}">{{ event.title | safe }}</a> at {{ event.extra.location }}, {{ event.extra.time }}
+{% endmacro eventmeta %}
