@@ -113,6 +113,7 @@ body > header > span img {
 body > header article {
     grid-area: event;
     font-size: 1.25em;
+    text-align: inherit;
 }
 
 body > header nav {

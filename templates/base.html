@@ -24,7 +24,7 @@
                 {% for event in events.pages | sort(attribute="date") %}
                 	{% set event_day = event.date | date(format="%Y%j") | int %}
                 	{% set curr_day = now() | date(format="%Y%j") | int %}
-                	{% if event_day > curr_day %}
+                	{% if event_day >= curr_day %}
                 	    Next event: <a href="{{ event.permalink | safe }}">{{ event.title | safe }}</a>, {{ event.date | date(format="%B %e") }}
                 	    {% break %}
                 	{% endif %}
