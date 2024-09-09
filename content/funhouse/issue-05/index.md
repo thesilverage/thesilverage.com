@@ -24,4 +24,7 @@ description = "Bands: Deleter, Vague Positivity, no coast!; Venue Feature: The P
 {{ bigimg(src="fun-house-05-16.png") }}
 
 ## Full Interviews
-Coming Soon (check back in a few days, we are trying our best !)
+[Deleter](deleter-interview-13-08-24.pdf)<br>
+[Vague Positivity](vague-positivity-interview-11-08-24.pdf)<br>
+[no coast!](no-coast!-interview-19-08-24.pdf)<br>
+[The Pouch](the-pouch-interview-12-08-24.pdf)
