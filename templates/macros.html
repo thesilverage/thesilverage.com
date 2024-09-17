@@ -3,7 +3,19 @@
 {% endmacro external %}
 
 {% macro img(src,height="") %}
-    <a href="{{ src | safe }}"><img src="{{ src | safe }}"{% if height %} style="max-height:{{ height | safe }};"{% endif %}></a>
+    {% if page %}{% set this = page %}{% elif section %}{% set this = section %}{% endif %}
+	{% if src | truncate(length=1, end="") == "/" %}
+		{% set imgpath = src %}
+	{% else %}
+		{% set imgpath = this.path ~ src %}
+	{% endif %}
+	{% set mdata = get_image_metadata(path=imgpath) %}
+	{% if mdata.width > 750 %}{% set smallimage = resize_image(path=imgpath, width=750, op="fit_width") %}{% endif %}
+	{% if mdata.width > 1500 %}{% set medimage = resize_image(path=imgpath, width=1500, op="fit_width") %}{% endif %}
+	{% if smallimage %}{% set default = smallimage.url %}{% else %}{% set default = src %}{% endif %}
+    <a href="{{ src | safe }}">
+        <img src="{{ default | safe }}" srcset="{% if smallimage %}{{ smallimage.url | safe }} 750w, {% endif %}{% if medimage %}{{ medimage.url | safe }} 1500w, {% endif %}{{ src | safe }} {{ mdata.width }}w"{% if height %} style="max-height:{{ height | safe }};"{% endif %}>
+    </a>
 {% endmacro img %}
 
 {% macro pagemeta(post,from=false) %}

@@ -70,6 +70,20 @@ p:last-child {
     margin-bottom: 0;
 }
 
+blockquote {
+    font-size: 1.25em;
+    text-align: center;
+    margin: 2em auto;
+}
+
+blockquote::before {
+    content: open-quote;
+}
+
+blockquote::after {
+    content: close-quote;
+}
+
 ul {
     list-style-type: "- ";
     margin-top: 0;
@@ -289,6 +303,7 @@ article {
 }
 
 main > nav {
+    margin-top: 1em;
     text-align: center;
 }
 

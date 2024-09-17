@@ -1,4 +1,6 @@
+{% import "macros.html" as m %}
 <figure>
-    {{ body | markdown | safe }}
+    {% if src %}{{ m::img(src=src) }}{% endif %}
+    {% if body %}{{ body | markdown | safe }}{% endif %}
     {% if caption %}<figcaption>{{ caption | safe }}</figcaption>{% endif %}
 </figure>

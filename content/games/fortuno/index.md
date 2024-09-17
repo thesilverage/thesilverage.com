@@ -125,10 +125,10 @@ If only two players remain, remove the following cards from the deck as they are
  - All Aces, Princes and Knights;
  - The Fool, The Magus, The Emperor, The Empress, The Hierophant, The Lovers, The Hermit, The Hanged Man, The Devil, and The Tower.
 
-{% footer() %}
+<footer>
 Created by:<br>
 Jessica Lopez, Evelyn Perfall, Katie Fuller, Max Weiss,<br>
 Michael Auble, Cole Gaboriault, Alicia Lopez<br>
 Copyright {{ symbol(text="&copy;") }} 2023-2024 The Silver Age.<br>
 All rights reserved.
-{% end %}
+</footer>
