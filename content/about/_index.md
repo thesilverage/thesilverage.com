@@ -9,10 +9,12 @@ We are the pastry chefs of the future, and you never can tell what we'll whip up
 
 ## Our Mission
 
-Things are getting bad, and we don't know what to do about it.
+Things are getting pretty bad, and we don't know what to do about it.
 We don't think anybody does!
-Your remaining options are to wait or to go.
-Which one will it be?
+But one thing is for sure: no existing structure or institution can help.
+The problem is deeper than that.
+So we're doing everything we can to outrun it, and bringing our friends and family with us.
+The sun's going down, and we're headed West.
 
 ## Our Home
 
