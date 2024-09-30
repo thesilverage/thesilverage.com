@@ -6,6 +6,12 @@ description = "Bands: Pleasure Circuit, Hackers &lley, The Goons; Venue Feature:
 "PDF Version" = "fun-house-03.pdf"
 +++
 
+## Full Interviews
+[Pleasure Circuit](pleasure-circuit-interview-09-07-24.pdf)<br>
+[Hackers &lley](hackers-&lley-interview-05-07-24.pdf)<br>
+[The Goons](the-goons-interview-16-07-24.pdf)<br>
+[MoMA2](moma2-interview-14-07-24.pdf)
+
 {{ bigimg(src="fun-house-03-01.png") }}
 {{ bigimg(src="fun-house-03-02.png") }}
 {{ bigimg(src="fun-house-03-03.png") }}
@@ -22,9 +28,3 @@ description = "Bands: Pleasure Circuit, Hackers &lley, The Goons; Venue Feature:
 {{ bigimg(src="fun-house-03-14.png") }}
 {{ bigimg(src="fun-house-03-15.png") }}
 {{ bigimg(src="fun-house-03-16.png") }}
-
-## Full Interviews
-[Pleasure Circuit](pleasure-circuit-interview-09-07-24.pdf)<br>
-[Hackers &lley](hackers-&lley-interview-05-07-24.pdf)<br>
-[The Goons](the-goons-interview-16-07-24.pdf)<br>
-[MoMA2](moma2-interview-14-07-24.pdf)

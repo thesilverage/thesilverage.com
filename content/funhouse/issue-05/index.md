@@ -6,6 +6,12 @@ description = "Bands: Deleter, Vague Positivity, no coast!; Venue Feature: The P
 "PDF Version" = "fun-house-05.pdf"
 +++
 
+## Full Interviews
+[Deleter](deleter-interview-13-08-24.pdf)<br>
+[Vague Positivity](vague-positivity-interview-11-08-24.pdf)<br>
+[no coast!](no-coast!-interview-19-08-24.pdf)<br>
+[The Pouch](the-pouch-interview-12-08-24.pdf)
+
 {{ bigimg(src="fun-house-05-01.png") }}
 {{ bigimg(src="fun-house-05-02.png") }}
 {{ bigimg(src="fun-house-05-03.png") }}
@@ -22,9 +28,3 @@ description = "Bands: Deleter, Vague Positivity, no coast!; Venue Feature: The P
 {{ bigimg(src="fun-house-05-14.png") }}
 {{ bigimg(src="fun-house-05-15.png") }}
 {{ bigimg(src="fun-house-05-16.png") }}
-
-## Full Interviews
-[Deleter](deleter-interview-13-08-24.pdf)<br>
-[Vague Positivity](vague-positivity-interview-11-08-24.pdf)<br>
-[no coast!](no-coast!-interview-19-08-24.pdf)<br>
-[The Pouch](the-pouch-interview-12-08-24.pdf)

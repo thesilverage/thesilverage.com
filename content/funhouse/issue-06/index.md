@@ -6,6 +6,10 @@ description = "Musicians: Somber Western, The Morning Doves"
 "PDF Version" = "fun-house-06.pdf"
 +++
 
+## Full Interviews
+[Somber Western](somber-western-interview-24-08-27.pdf)<br>
+The Morning Doves: coming very soon
+
 {{ bigimg(src="fun-house-06-01.png") }}
 {{ bigimg(src="fun-house-06-02.png") }}
 {{ bigimg(src="fun-house-06-03.png") }}
@@ -14,7 +18,3 @@ description = "Musicians: Somber Western, The Morning Doves"
 {{ bigimg(src="fun-house-06-06.png") }}
 {{ bigimg(src="fun-house-06-07.png") }}
 {{ bigimg(src="fun-house-06-08.png") }}
-
-## Full Interviews
-[Somber Western](somber-western-interview-24-08-27.pdf)<br>
-The Morning Doves: coming very soon
