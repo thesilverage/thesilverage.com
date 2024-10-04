@@ -8,7 +8,8 @@ description = "Bands: Cold Comfort, Silver Machine, Hyperion; Venue Feature: Lit
 
 ## Full Interviews
 [Cold Comfort](cold-comfort-interview-24-09-12.pdf)<br>
-Silver Machine, Hyperion, and Little Big Planet coming soon
+[Hyperion](hyperion-interview-24-09-04.pdf)<br>
+Silver Machine and Little Big Planet coming soon
 
 {{ bigimg(src="fun-house-07-01.png") }}
 {{ bigimg(src="fun-house-07-02.png") }}
