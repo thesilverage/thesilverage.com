@@ -7,7 +7,7 @@ description = "Musicians: Justin Roa"
 +++
 
 ## Full Interviews
-Justin Roa: coming very soon
+[Justin Roa](justin-roa-interview-24-09-24.pdf)
 
 {{ bigimg(src="fun-house-08-01.png") }}
 {{ bigimg(src="fun-house-08-02.png") }}
