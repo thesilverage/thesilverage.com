@@ -3,7 +3,7 @@ title = "Fun House Vol. 7"
 date = 2024-09-28
 description = "Bands: Cold Comfort, Silver Machine, Hyperion; Venue Feature: Little Big Planet"
 [extra.sidebar.ungrouped]
-"PDF Version" = "fun-house-05.pdf"
+"PDF Version" = "fun-house-07.pdf"
 +++
 
 ## Full Interviews
