@@ -8,3 +8,5 @@ time = "19:30"
 +++
 
 {{ bigimg(src="/images/invitation-24-07-27.png") }}
+
+{{ youtube(id="0XtbkbD1gvI") }}
