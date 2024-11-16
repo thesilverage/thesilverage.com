@@ -7,7 +7,8 @@ description = "Musicians: Chase Greer, Lydia Hamilton"
 +++
 
 ## Full Interviews
-Coming quite soon (audio edition)
+[Chase Greer](https://www.youtube.com/watch?v=bM1vc-FSjn0)<br>
+Lydia Hamilton coming soon
 
 {{ bigimg(src="fun-house-10-01.png") }}
 {{ bigimg(src="fun-house-10-02.png") }}
