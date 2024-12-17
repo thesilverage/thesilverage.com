@@ -10,7 +10,7 @@ description = "Bands: Birthday Clowns, Aria Donn, Superspreder, Cold Comfort; Ve
 [Birthday Clowns](https://www.youtube.com/watch?v=rIsPiDvOo6k)<br>
 Aria Donn: transcript coming soon<br>
 [Superspreder](https://www.youtube.com/watch?v=p7-F1RzG3Pc)<br>
-[Cold Comfort](https://www.youtube.com/watch?v=9jJCNaosoos)<br>
+[Cold Comfort](https://www.youtube.com/watch?v=9jJCNaosoos)
 
 {{ bigimg(src="fun-house-11-01.png") }}
 {{ bigimg(src="fun-house-11-02.png") }}
