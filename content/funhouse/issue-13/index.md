@@ -19,3 +19,5 @@ description = "Bands: Kaiser Unique, Hello Whirled; Venue Feature: Haus of Yarga
 {{ bigimg(src="fun-house-13-06.png") }}
 {{ bigimg(src="fun-house-13-07.png") }}
 {{ bigimg(src="fun-house-13-08.png") }}
+
+Note: The Coffeehouse on January 15th is a Fictitious Event. Do not believe everything you read.

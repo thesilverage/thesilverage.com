@@ -14,3 +14,5 @@ description = "Musicians: Syl Fisher, Orson Hells"
 {{ bigimg(src="fun-house-12-02.png") }}
 {{ bigimg(src="fun-house-12-03.png") }}
 {{ bigimg(src="fun-house-12-04.png") }}
+
+Note: The Coffeehouse on January 15th is a Fictitious Event. Do not believe everything you read.

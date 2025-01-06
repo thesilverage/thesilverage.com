@@ -24,3 +24,5 @@ Aria Donn: transcript coming soon<br>
 {{ bigimg(src="fun-house-11-10.png") }}
 {{ bigimg(src="fun-house-11-11.png") }}
 {{ bigimg(src="fun-house-11-12.png") }}
+
+Note: The Coffeehouse on January 15th is a Fictitious Event. Do not believe everything you read.
