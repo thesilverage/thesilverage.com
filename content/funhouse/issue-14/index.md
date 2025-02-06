@@ -7,7 +7,10 @@ description = "Bands: Soft Idiot, Te Vista, Vague Positivity; Venue Feature: The
 +++
 
 ## Full Interviews
-Coming Imminently (We Mean It!)
+[Soft Idiot](https://www.youtube.com/watch?v=Z5sf4v6q3Ko)<br>
+Te Vista: pending declassification<br>
+[Vague Positivity](https://www.youtube.com/watch?v=6G3C_6vOI58)<br>
+[The Rug Club](https://www.youtube.com/watch?v=9Oj9sUkeylo)
 
 {{ bigimg(src="fun-house-14-01.png") }}
 {{ bigimg(src="fun-house-14-02.png") }}
