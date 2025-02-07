@@ -1,6 +1,6 @@
 +++
 title = "Guest Show: Pieces of Pluto"
-date = "2025-02-12"
+date = "2025-02-14"
 template = "eventpage.html"
 [extra]
 location = "HQ"
