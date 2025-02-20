@@ -7,7 +7,7 @@ description = "Musicians: Sock Revival, Adam Monaco"
 +++
 
 ## Full Interviews
-Sock Revival: coming shortly<br>
+[Sock Revival](https://www.youtube.com/watch?v=9AhHlQR5vaE)<br>
 Adam Monaco: coming shortly (special edition)
 
 {{ bigimg(src="fun-house-15-01.png") }}
