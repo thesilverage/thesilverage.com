@@ -6,3 +6,4 @@ template = "eventpage.html"
 location = "HQ"
 time = "19:30"
 +++
+The O'Fucchs, Mr. Fatty, Trash the Bathhouse

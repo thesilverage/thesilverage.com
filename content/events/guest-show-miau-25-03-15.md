@@ -6,3 +6,5 @@ template = "eventpage.html"
 location = "HQ"
 time = "19:30"
 +++
+
+Moa, A Night of Arrogance, Gossamer, miau

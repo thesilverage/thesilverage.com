@@ -6,3 +6,5 @@ template = "eventpage.html"
 location = "HQ"
 time = "19:30"
 +++
+
+Pajammies, Bugger, Cicada Killer, Armbite
