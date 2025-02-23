@@ -6,3 +6,5 @@ template = "eventpage.html"
 location = "HQ"
 time = "20:00"
 +++
+
+Silas Spooner, Julia Finegan

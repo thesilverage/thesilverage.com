@@ -6,3 +6,5 @@ template = "eventpage.html"
 location = "HQ"
 time = "20:00"
 +++
+
+1000 Dead Birds, Devils Cross Country, heatloaf, Mormon Toasterhead
