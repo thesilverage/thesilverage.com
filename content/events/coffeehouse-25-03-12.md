@@ -7,4 +7,4 @@ location = "HQ"
 time = "20:00"
 +++
 
-The Skirts, Foreland Basin
+{{ bigimg(src="/images/coffeehouse-25-03-12.png") }}

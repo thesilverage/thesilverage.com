@@ -7,4 +7,4 @@ location = "HQ"
 time = "19:30"
 +++
 
-Moa, A Night of Arrogance, Gossamer, miau
+{{ bigimg(src="/images/invitation-25-03-15.png") }}
