@@ -7,4 +7,4 @@ location = "HQ"
 time = "19:00"
 +++
 
-wallace, tonight!, Super Jack, mICROgOBLET, Joontoon
+{{ bigimg(src="/images/25-03-26-the-roulette.jpg") }}

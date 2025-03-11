@@ -7,4 +7,4 @@ location = "HQ"
 time = "19:00"
 +++
 
-Downdresser, Soft Idiot, Salina Kuo, blue jean, generalife
+{{ bigimg(src="/images/25-03-25-the-roulette.jpg") }}
