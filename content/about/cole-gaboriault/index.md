@@ -14,7 +14,7 @@ quotes = ["That's me !", "Jazz smells bad", "I'm one-eighth Jewish, so I can be 
 "Hobby" = "Stone Tools"
 "Self-Conscious About" = "Overuse of Commas"
 "Discussion Topic" = "Phase Separation in Demography"
-"Next Target" = "Your Keys"
+"Next Target" = "456 N 5th Street"
 [extra.medias]
 "Youtube" = {name = "@PenetratingPolymath", url = "https://www.youtube.com/@PenetratingPolymath"}
 +++
