@@ -7,7 +7,10 @@ description = "Bands: The O'Fucchs, Mr. Fatty, Trash the Bath-House; Venue Featu
 +++
 
 ## Full Interviews
-Arriving imminently to your internet service provider
+[The O'Fucchs](https://www.youtube.com/watch?v=madqkOzXFNQ)<br>
+[Mr. Fatty](https://www.youtube.com/watch?v=2apOYtaIbVQ)<br>
+[Trash the Bath-House](https://www.youtube.com/watch?v=ZFUs6zUXUJI)<br>
+[Orpheus' Garden](https://www.youtube.com/watch?v=AywMYGLE-MA)
 
 {{ bigimg(src="fun-house-18-01.png") }}
 {{ bigimg(src="fun-house-18-02.png") }}
