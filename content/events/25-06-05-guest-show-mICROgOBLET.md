@@ -7,4 +7,4 @@ location = "HQ"
 time = "19:30"
 +++
 
-mICROgOBLET,	A Night of Arrogance,	Nylon, Olympic Deth
+mICROgOBLET, A Night of Arrogance, Nylon, Olympic Deth
