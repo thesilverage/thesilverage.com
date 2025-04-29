@@ -4,7 +4,7 @@ date = "2025-04-10"
 template = "eventpage.html"
 [extra]
 location = "HQ"
-time = "20:00"
+time = "19:00"
 +++
 
-1000 Dead Birds, Devils Cross Country, heatloaf, Mormon Toasterhead
+{{ bigimg(src="/images/invitation-25-04-10.jpg") }}

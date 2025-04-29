@@ -4,6 +4,7 @@ date = "2025-04-13"
 template = "eventpage.html"
 [extra]
 location = "HQ"
-time = "19:30"
+time = "19:00"
 +++
-fif, no coast!, mICROgOBLET, Carpet Floor
+
+{{ bigimg(src="/images/invitation-25-04-13.jpg") }}

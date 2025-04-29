@@ -7,4 +7,4 @@ location = "HQ"
 time = "20:00"
 +++
 
-Silas Spooner, Julia Finegan
+{{ bigimg(src="/images/coffeehouse-25-04-09.png") }}
