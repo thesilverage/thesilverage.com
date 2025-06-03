@@ -7,4 +7,4 @@ location = "HQ"
 time = "19:30"
 +++
 
-mICROgOBLET, A Night of Arrogance, Nylon, Olympic Deth
+{{ bigimg(src="/images/invitation-25-06-05.jpg") }}
