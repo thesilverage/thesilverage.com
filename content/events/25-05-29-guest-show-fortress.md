@@ -7,4 +7,4 @@ location = "HQ"
 time = "19:30"
 +++
 
-Cinema Stare
+{{ bigimg(src="/images/invitation-25-05-29.jpg") }}

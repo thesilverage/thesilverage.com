@@ -7,4 +7,4 @@ location = "HQ"
 time = "19:30"
 +++
 
-Yell At God, Dirty Harry, Helga Pataki, Rent Strike
+{{ bigimg(src="/images/invitation-25-05-28.jpg") }}
