@@ -1,5 +1,5 @@
 +++
-title = "TBA"
+title = "Infinite Sun"
 date = "2025-07-19"
 template = "eventpage.html"
 [extra]

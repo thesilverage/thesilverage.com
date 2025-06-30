@@ -1,6 +1,6 @@
 +++
-title = "Guest Show: TBA"
-date = "2025-07-18"
+title = "Guest Show: Edweirdo and the Elephants Release Show"
+date = "2025-07-13"
 template = "eventpage.html"
 [extra]
 location = "HQ"
