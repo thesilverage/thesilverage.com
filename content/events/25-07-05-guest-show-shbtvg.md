@@ -1,5 +1,5 @@
 +++
-title = "Guest Show: Small Head Big Torso Vicious Grip & Giant Release Show"
+title = "Guest Show: SHBTVG & Giant Release Show"
 date = "2025-07-05"
 template = "eventpage.html"
 [extra]
