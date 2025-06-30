@@ -7,4 +7,4 @@ location = "HQ"
 time = "19:30"
 +++
 
-Pajammies, Bugger, Cicada Killer, Armbite
+{{ bigimg(src="/images/invitation-25-05-17.jpg") }}

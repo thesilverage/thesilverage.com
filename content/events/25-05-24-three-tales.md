@@ -7,4 +7,4 @@ location = "HQ"
 time = "19:30"
 +++
 
-GORF, Dear Future Archaeologists, April 1830
+{{ bigimg(src="/images/invitation-25-05-24.jpg") }}
