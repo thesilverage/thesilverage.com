@@ -1,6 +1,6 @@
 +++
-title = "Guest Show: TBA"
-date = "2025-09-27"
+title = "Guest Show: Argo and the Violent Queens"
+date = "2025-11-14"
 template = "eventpage.html"
 [extra]
 location = "HQ"

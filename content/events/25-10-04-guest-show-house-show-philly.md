@@ -1,6 +1,6 @@
 +++
-title = "Guest Show: TBA"
-date = "2025-09-27"
+title = "Guest Show: House Show Philly"
+date = "2025-10-04"
 template = "eventpage.html"
 [extra]
 location = "HQ"

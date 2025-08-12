@@ -1,6 +1,6 @@
 +++
-title = "TBA"
-date = "2025-09-13"
+title = "Coffeehouse"
+date = "2025-09-10"
 template = "eventpage.html"
 [extra]
 location = "HQ"

@@ -1,5 +1,5 @@
 +++
-title = "Guest Show: TBA"
+title = "Guest Show: Vice Trip
 date = "2025-08-16"
 template = "eventpage.html"
 [extra]
