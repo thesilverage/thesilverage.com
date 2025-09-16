@@ -6,4 +6,4 @@ template = "eventpage.html"
 location = "HQ"
 time = "19:30"
 +++
-Big Believer, Soft Idiot, Downdresser, Vine Whip
+{{ bigimg(src="/images/invitation-25-08-30.png") }}
