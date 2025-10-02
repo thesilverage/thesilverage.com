@@ -6,4 +6,5 @@ template = "eventpage.html"
 location = "HQ"
 time = "19:30"
 +++
-{{ bigimg(src="/images/invitation-25-07-13.jpeg") }}
+
+{{ bigimg(src="/images/invitation-25-07-13.jpg") }}
