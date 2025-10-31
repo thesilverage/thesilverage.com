@@ -316,7 +316,7 @@ iframe {
     margin: 0 auto 1em auto;
 }
 
-iframe.youtube {
+iframe.youtube, iframe.cloudpano {
     width: 100%;
     aspect-ratio: 16/9;
 }
