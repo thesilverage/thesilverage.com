@@ -7,5 +7,4 @@ location = "HQ"
 time = "17:00"
 +++
 
-Wallace, Tonight!
-Downdresser
+Wallace, Tonight!, Downdresser

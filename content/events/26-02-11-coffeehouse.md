@@ -7,5 +7,4 @@ location = "HQ"
 time = "20:00"
 +++
 
-Luther
-Chris II
+Luther, Chris II

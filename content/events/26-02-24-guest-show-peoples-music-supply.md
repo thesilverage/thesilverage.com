@@ -7,5 +7,4 @@ location = "HQ"
 time = "19:30"
 +++
 
-Inverse and Obverse
-y0va
+Inverse and Obverse, y0va
