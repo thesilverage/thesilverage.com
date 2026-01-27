@@ -1,5 +1,5 @@
 +++
-title = "Guest Show: Super Bowl"
+title = "Gridiron Potluck"
 date = "2026-02-08"
 template = "eventpage.html"
 [extra]
