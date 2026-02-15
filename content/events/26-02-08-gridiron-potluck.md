@@ -7,4 +7,4 @@ location = "HQ"
 time = "17:00"
 +++
 
-Wallace, Tonight!, Downdresser
+{{ bigimg(src="/images/invitation-26-02-08.JPG") }}

@@ -7,4 +7,4 @@ location = "HQ"
 time = "20:00"
 +++
 
-Luther, Chris II
+{{ bigimg(src="/images/invitation-26-02-11.png") }}

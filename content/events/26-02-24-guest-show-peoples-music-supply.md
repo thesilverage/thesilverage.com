@@ -7,4 +7,4 @@ location = "HQ"
 time = "19:30"
 +++
 
-Inverse and Obverse, y0va
+{{ bigimg(src="/images/invitation-26-02-24.jpg") }}
