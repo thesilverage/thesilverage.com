@@ -1,7 +1,7 @@
 +++
 title = "Fun House Vol. 51"
 date = 2026-08-22
-description = "Musicians: Dear Future Archaeologists, Trash The Bath-House, Keepsake 1Million"
+description = "Bands: Dear Future Archaeologists, Trash The Bath-House, Keepsake 1Million"
 [extra.sidebar.ungrouped]
 "PDF Version" = "fun-house-51.pdf"
 +++
