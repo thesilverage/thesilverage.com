@@ -1,6 +1,6 @@
 +++
 title = "AI Summit 4: Holy shit fuck"
-date = "2025-09-13"
+date = "2026-09-13"
 template = "eventpage.html"
 [extra]
 location = "HQ"
